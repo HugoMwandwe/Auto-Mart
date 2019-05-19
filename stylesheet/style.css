@@ -1,0 +1,277 @@
+body{
+  font: 15px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#f4f4f4;
+}
+
+.login{
+    width: 360px;
+    padding: 04.8% 0 0;
+    margin: auto;
+}
+
+.signup{
+    width: 360px;
+    padding: 05% 0 0;
+    margin: auto;
+}
+
+.form{
+    position: relative;
+    z-index: 1;
+    background: #35424a;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+}
+
+.form input{
+    text-align: center;
+    background: #f4f4f4;
+    font-family: "Roboto", sans-serif;
+    outline: 1;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 20px;
+    border-radius: 4px;
+}
+
+#custom-button{
+    padding: 15px;
+    color:#ffffff;
+    background-color: #009578;
+    border: 1px solid #e8491d;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 150px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#custom-button:hover{
+    background-color: #00b27f;
+}
+
+#custom-text{
+    margin-left: 10px;
+    font-family: sans-serif;
+    color: #aaa;
+}
+
+input [type=text], select{
+    width: 100%;
+    padding: 15px;
+    background: #f4f4f4;
+    border: 0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: 1;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+textarea{
+    width: 100%;
+    padding: 15px;
+    margin: 0 0 15px;
+    background: #f4f4f4;
+    border: 0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: 1;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.radioContainer{
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    user-select: none;
+    padding-left: 30px;
+}
+
+.radioContainer input{
+    display: none;
+}
+
+.radioContainer .circle{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #f4f4f4;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 20px;
+}
+
+.radioContainer:hover .circle{
+    background-color: #ccc;
+}
+
+.radioContainer input:checked + .circle{
+    background-color: #e8491d;
+}
+
+.radioContainer input:checked + .circle:after{
+    content: "";
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+label{
+    color: white;
+}
+
+/* Global */
+.container{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+}
+
+ul{
+  margin:0;
+  padding:0;
+  list-style: none
+}
+
+.button_1{
+  height:38px;
+  background:#e8491d;
+  border:0;
+  padding-left: 20px;
+  padding-right:20px;
+  color:#ffffff;
+}
+
+/* Header */
+header{
+  background:#35424a;
+  color:#ffffff;
+  padding-top:30px;
+  min-height:70px;
+  border-bottom:#e8491d 3px solid;
+}
+
+header a{
+  color:#ffffff;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:16px;
+}
+
+header li{
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+
+header #home{
+  float:left;
+}
+
+header #home h1{
+  margin:0;
+}
+
+header nav{
+  float:right;
+  margin-top:10px;
+}
+
+header .highlight, header .current a{
+  color:#e8491d;
+  font-weight:bold;
+}
+
+header a:hover{
+  color:#cccccc;
+  font-weight:bold;
+}
+
+/* Showcase */
+#showcase{
+  min-height:400px;
+  background:url('../images/engine-wallpapers.jpg') no-repeat 0 -800px;
+  text-align:center;
+  color:#ffffff;
+}
+
+#showcase h1{
+  margin-top:100px;
+  font-size:55px;
+  margin-bottom:10px;
+}
+
+#showcase p{
+  font-size:20px;
+}
+
+h4{
+  font-size:20px;
+  margin-bottom:10px;
+  color: #aaa;
+}
+
+/* Search */
+#search{
+  padding:20px;
+  color:#ffffff;
+  background:#35424a;
+}
+
+#search h1{
+  float:left;
+}
+
+#search form {
+  float:right;
+  margin-top:20px;
+}
+
+#search input[type="text"]{
+  padding:4sspx;
+  height:32px;
+  width:300px;
+}
+
+/* Images */
+#images{
+  margin-top:40px;
+}
+
+#images .image{
+  float:left;
+  text-align: center;
+  width:47%;
+  padding:16px;
+}
+
+#images .image img{
+  width:190px;
+}
+
+footer{
+  padding:20px;
+  margin-top:20px;
+  color:#ffffff;
+  background-color:#35424a;
+  text-align: center;
+}

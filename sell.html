@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Car sales">
+	  <meta name="keywords" content="automobile">
+  	<meta name="author" content="Hugo Mwandwe">
+    <title>Sell</title>
+    <script src="script/script.js"></script>
+    <link rel="stylesheet" href="./stylesheet/style.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="container">
+            <div id="home">
+                <h1><span class="highlight">Auto</span> Mart</h1>
+            </div>        
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="current"><a href="sell.html">Sell</a></li>             
+                <li><a href="updateprice.html">Price</a></li>
+                <li><a href="updatepurchase.html">Purchase</a></li>
+                <li><a href="profilesetting.html">Profile</a></li>
+                
+            </ul>
+        </nav>
+        </div>
+        </div>
+    </header>
+
+    <section id="search">
+        <div class="container">
+            <h1>Search Cars</h1>
+                <form>
+                    <input type="text" name="" placeholder="Type...">
+                    <button type="submit" class="button_1">Search</button>
+                </form>
+        </div>
+    </section>
+
+    <section id="main">
+        <div class="container">
+            <div class="sell">
+                <div class="form">
+                <form name="myform" action="" method="post">
+                    
+                    <label for="make">Make</label>
+                    <select id="make">
+                        <option value="make"></option>
+                        <option value="acura">Acura</option>
+                        <option value="alfa romeo">Alfa Romeo</option>
+                        <option value="aston martin">Aston Martin</option>
+                        <option value="audi">Audi</option>
+                        <option value="bentley">Bentley</option>
+                        <option value="bmw">BMW</option>
+                        <option value="bugatti">Bugatti</option>
+                        <option value="cadillac">Cadillac</option>
+                        <option value="chevrolet">Chevrolet</option>
+                        <option value="chrysler">Chrysler</option>
+                        <option value="citroen">Citroen</option>
+                        <option value="cord">Cord</option>
+                        <option value="corvette">Corvette</option>
+                        <option value="dodge">Dodge</option>
+                        <option value="ferrari">Ferrari</option>
+                        <option value="fiat">Fiat</option>
+                        <option value="ford">Ford</option>
+                        <option value="honda">Honda</option>
+                        <option value="hummer">Hummer</option>
+                        <option value="hyundai">Hyundai</option>
+                        <option value="infiniti">Infiniti</option>
+                        <option value="isuzu">Isuzu</option>
+                        <option value="jaguar">Jaguar</option>
+                        <option value="jeep">Jeep</option>
+                        <option value="kia">Kia</option>
+                        <option value="lamborghini">Lamborghini</option>
+                        <option value="land_rover">Land Rover</option>
+                        <option value="lexus">Lexus</option>
+                        <option value="lotus">Lotus</option>
+                        <option value="maserati">Maserati</option>
+                        <option value="maybach">Maybach</option>
+                        <option value="mazda">Mazda</option>
+                        <option value="mercedes-benz">Mercedes-Benz</option>
+                        <option value="mitsubishi">Mitsubishi</option>
+                        <option value="nissan">Nissan</option>
+                        <option value="peugeot">Peugeot</option>
+                        <option value="porsche">Porsche</option>
+                        <option value="renault">Renault</option>
+                        <option value="rolls-royce">Rolls-Royce</option>
+                        <option value="shelby">Shelby</option>
+                        <option value="subaru">Subaru</option>
+                        <option value="suzuki">Suzuki</option>
+                        <option value="volkswagen">Volkswagen</option>
+                        <option value="volvo">Volvo</option>
+                        <option value="tata">Tata</option>
+                        <option value="toyota">Toyota</option>
+                    </select>
+                    
+                    <label for="car">Car</label>
+                    <select id="car">
+                        <option value="car"></option>
+                        <option value="2 doors">2 doors</option>
+                        <option value="4 doors">4 doors</option>
+                        <option value="sport utility vehicle(suv)">Sport Utility Vehicle (SUV)</option>
+                        <option value="van/minivan">Van/Minivan</option>
+                        <option value="pickup/truck">Pickup/Truck</option>
+                        <option value="honda">Honda</option>
+                        <option value="convertible">Convertible</option>
+                        <option value="others">Others</option>
+                    </select>
+                    
+                    <label for="year">Year</label>
+                    <input type="text" name="year"><br>
+                    <label for="mileage">Mileage</label>
+                    <input type="text" name="mileage"><br>
+                    
+                    <label class="radioContainer">New
+                        <input type="radio" name="condition">
+                        <span class="circle"></span>
+                    </label>
+                    <br><br>
+                    <label class="radioContainer">Used
+                        <input type="radio" name="condition">
+                        <span class="circle"></span>
+                    </label>
+                    <br><br>
+                    
+                    <label class="radioContainer">Automatic
+                        <input type="radio" name="transmission">
+                        <span class="circle"></span>
+                    </label>
+                    <br><br>
+                    <label class="radioContainer">Manual
+                        <input type="radio" name="transmission">
+                        <span class="circle"></span>
+                    </label>
+                    <br><br>
+                    
+                    <label for="license_plate">License Plate</label>
+                    <input type="text" name="license_plate"><br>
+                    <label for="ad_title">Ad Title</label>
+                    <input type="text" name="ad_title"><br>
+                    
+                    <label for="description">Description</label>
+                    <textarea cols="45" rows="5" name="descrip"></textarea>
+                    
+                    <label for="price">SET A PRICE</label>
+                    <input type="text" name="price">
+                    
+                    
+                    <input type="file" id="real-file" hidden="hidden"/>
+                    <button type="button" id="custom-button">UPLOAD IMAGE</button>
+                    <span id="custom-text">No file uploaded</span>
+                    <br><br>
+        
+                    <script type="text/javascript">
+                        const realFileBtn=document.getElementById("real-file");
+                            const customBtn=document.getElementById("custom-button");
+                            const               customTxt=document.getElementById("cus tom-text");
+            
+                            customBtn.addEventListener("click", function(){
+                            realFileBtn.click();
+                        });
+            
+                        realFileBtn.addEventListener("change",  function(){
+                        if(realFileBtn.value){
+                            customTxt.innerHTML=realFileBtn.value.match(/[\/\\]([\w\d\s\.\-\(\)]+)$/)[1];
+                            }else{
+                                customTxt.innerHTML="No file    uploaded, yet";
+                            }
+                        });
+                    </script>
+                    
+                    <label for="location">CONFIRM YOUR LOCATION</label>
+                    <select id="location">
+                        <option value="location"></option>
+                        <option value="nairobi">Nairobi</option>
+                        <option value="mombasa">Mombasa</option>
+                        <option value="kisumu">Kisumu</option>
+                        <option value="eldoret">Eldoret</option>
+                        <option value="nakuru">Nakuru</option>
+                        <option value="machakos">Machakos</option>
+                        <option value="naivasha">Naivasha</option>
+                        <option value="others">Others</option>
+                    </select>
+                    <h4>YOUR DETAILS</h4>
+                    <label for="price">Name</label>
+                    <input type="text" name="name">
+                    <label for="price">Phone number</label>
+                    <input type="text" name="phone">
+                    
+                    <button type="submit" class="button_1">Post Ad</button>
+                    
+                </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>AUTO MART AUTOMOBILE, Copyright &copy; 2019</p>
+    </footer>
+  </body>
+</html>

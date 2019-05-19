@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Car sales">
+	  <meta name="keywords" content="automobile">
+  	<meta name="author" content="Hugo Mwandwe">
+    <title>Login</title>
+    <script src="script/script.js"></script>
+    <link rel="stylesheet" href="./stylesheet/style.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="container">
+            <div id="home">
+                <h1><span class="highlight">Auto</span> Mart</h1>
+            </div>        
+        <nav>
+            <ul>
+                <li><a href="signup.html">Signup</a></li>
+            </ul>
+        </nav>
+        </div>
+        </div>
+    </header>
+      
+      <script>
+          function login(){
+        var em=document.forms["myform"]["email"].value;
+        var pws=document.forms["myform"]["pass"].value;
+    
+        if(em=="hugmwandwe#gmail.com")
+        {
+            if(pws=="123456"){
+                    alert("Login successful");
+                }
+                else{
+                    alert("incorrect email or password");
+                }
+            }
+            else{
+                alert("incorrect email or password");
+            }
+        }
+      </script>
+      
+      <div class="login">
+        <div class="form">
+          <form name="myform">
+            <input type="text" name="email" placeholder="email"><br>
+            <input type="password" name="pass" placeholder="password"><br>
+            <button type="submit" class="button_1"><a href="index.html">Login</a></button>
+          </form>
+        </div>
+      </div>
+      
+    <footer>
+        <p>AUTO MART AUTOMOBILE, Copyright &copy; 2019</p>
+    </footer>
+  </body>
+</html>
