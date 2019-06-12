@@ -29,7 +29,6 @@ body{
 
 .form input{
     text-align: center;
-    background: #f4f4f4;
     font-family: "Roboto", sans-serif;
     outline: 1;
     width: 100%;
@@ -201,6 +200,16 @@ header .highlight, header .current a{
   font-weight:bold;
 }
 
+section .change, section .current a{
+  color:#e8491d;
+  font-weight:bold;
+}
+
+section .black, section .current a{
+  color:darkgreen;
+  font-weight:bold;
+}
+
 header a:hover{
   color:#cccccc;
   font-weight:bold;
@@ -209,7 +218,7 @@ header a:hover{
 /* Showcase */
 #showcase{
   min-height:400px;
-  background:url('../images/engine-wallpapers.jpg') no-repeat 0 -800px;
+  background:url('../images/net3.jpg') no-repeat -600px -1010px;
   text-align:center;
   color:#ffffff;
 }
@@ -260,7 +269,7 @@ h4{
 #images .image{
   float:left;
   text-align: center;
-  width:47%;
+  width:30%;
   padding:16px;
 }
 

@@ -4,11 +4,20 @@
   "description": "My api",
   "main": "index.js",
   "scripts": {
-    "test": "\u001b[H"
+    "start": "node index", "dev": "nodemon index"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HugoMwandwe/Auto-Mart.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/HugoMwandwe/Auto-Mart/issues"
+  },
+  "homepage": "https://github.com/HugoMwandwe/Auto-Mart#readme"
 }
