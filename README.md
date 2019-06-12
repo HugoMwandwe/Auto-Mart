@@ -1,6 +1,6 @@
 # Auto-Mart App
 
-Motor-vehicles, Selling and buying!
+Motor-vehicles, Selling and buying!!
 
 This app is part of the Andela challenege for bootcamp
 
